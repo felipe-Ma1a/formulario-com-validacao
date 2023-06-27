@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 3 - Formulário</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <section class="container">
+        <article class="texto">
+          <h1>
+            Ficou com dúvida? <br />
+            Nos mande uma mensagem!
+          </h1>
+          <p>
+            caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem
+            e entraremos em contato em menos de 24h.
+          </p>
+        </article>
+
+        <article class="formulario">
+          <form class="form" id="form">
+            <div class="input-control">
+              <input
+                type="text"
+                name="nome"
+                class="input"
+                id="nome"
+                placeholder="Nome completo *"
+              />
+              <div class="erro"></div>
+            </div>
+
+            <div class="input-control">
+              <input
+                type="email"
+                name="email"
+                class="input"
+                id="email"
+                placeholder="Email *"
+              />
+              <div class="erro"></div>
+            </div>
+
+            <div class="input-control">
+              <input
+                type="number"
+                name="telefone"
+                class="input"
+                id="telefone"
+                placeholder="Telefone *"
+              />
+              <div class="erro"></div>
+            </div>
+
+            <div class="input-control">
+              <textarea
+                name="mensagem"
+                rows="5"
+                cols="50"
+                class="input"
+                id="mensagem"
+                placeholder="Mensagem *"
+              ></textarea>
+              <div class="erro"></div>
+            </div>
+
+            <p>*campos obrigatórios</p>
+            <button type="submit" class="botao" id="botao">Enviar</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./src/js/form.js"></script>
+  </body>
+</html>

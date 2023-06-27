@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 800px;
+  height: 402px;
+  background-image: url(../images/bg-repeat.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.2rem;
+  padding: 4rem;
+}
+
+.container .texto {
+  color: #fff;
+}
+
+.container .texto h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+.container .texto p {
+  max-width: 95%;
+}
+
+.container .formulario {
+  width: 340px;
+  height: 378px;
+  background: #fff;
+  border-radius: 0.6rem;
+}
+
+@-moz-document url-prefix() {
+  .container .formulario {
+    height: 390px;
+  }
+}
+
+.container .formulario .form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.formulario .form .input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .input-control .input {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.1rem;
+  font-weight: 500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.formulario .form .input-control textarea {
+  resize: none;
+}
+
+.formulario .form p {
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+@-moz-document url-prefix() {
+  .formulario .form p {
+    margin-bottom: 1rem;
+  }
+}
+
+.formulario .form .botao {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3ccc87;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.4rem;
+  transition: 0.3s;
+}
+
+@-moz-document url-prefix() {
+  .formulario .form .botao {
+    padding: 1.1rem;
+  }
+}
+
+.formulario .form .botao:hover {
+  opacity: 0.8;
+}
+
+.form .input-control.preenchido .input {
+  border-color: #00c22b;
+}
+
+.form .input-control.obrigatorio .input {
+  border-color: #f52e2e;
+}
+
+.form .input-control .erro {
+  color: #f52e2e;
+  font-size: 0.9rem;
+  height: 15px;
+}
